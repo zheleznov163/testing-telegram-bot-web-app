@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* bg_color	
+  String	Optional. Background color in the #RRGGBB format.
+  Also available as the CSS variable var(--tg-theme-bg-color).
+*/
+/* text_color	
+  String	Optional. Main text color in the #RRGGBB format.
+  Also available as the CSS variable var(--tg-theme-text-color).
+*/
+/* hint_color	
+  String	Optional. Hint text color in the #RRGGBB format.
+  Also available as the CSS variable var(--tg-theme-hint-color).
+*/
+/* link_color	
+  String	Optional. Link color in the #RRGGBB format.
+  Also available as the CSS variable var(--tg-theme-link-color).
+*/
+/* button_color	
+  String	Optional. Button color in the #RRGGBB format.
+  Also available as the CSS variable var(--tg-theme-button-color).
+*/
+/* button_text_color	
+  String	Optional. Button text color in the #RRGGBB format.
+  Also available as the CSS variable var(--tg-theme-button-text-color).
+*/
+/* secondary_bg_color	
+  String	Optional. Bot API 6.1+ Secondary background color in the #RRGGBB format.
+  Also available as the CSS variable var(--tg-theme-secondary-bg-color).
+*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
 }

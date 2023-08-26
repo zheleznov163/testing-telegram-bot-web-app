@@ -8665,6 +8665,11 @@ tapable@^2.0.0, tapable@^2.1.1, tapable@^2.2.0:
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
   integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
+telegram-webapps-types-new@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/telegram-webapps-types-new/-/telegram-webapps-types-new-1.0.4.tgz#6f3254def80fbe1d1e1354686d3376321815a74d"
+  integrity sha512-/1t4jKGw0PN2U+wiIZ0logyf5KqvDfvKttVj7003I+AeJr4EuDn2EJFbGh76BVXm4xGBZh3fD48omYWHhTE7jg==
+
 temp-dir@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-2.0.0.tgz#bde92b05bdfeb1516e804c9c00ad45177f31321e"
