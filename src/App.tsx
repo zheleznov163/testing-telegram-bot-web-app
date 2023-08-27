@@ -1,5 +1,6 @@
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import "./App.css";
+import { Header } from "./components/moleculs";
 
 export default function App() {
     useEffect(() => {
@@ -10,10 +11,16 @@ export default function App() {
         Telegram.WebApp.close();
     }, []);
 
+    const { initDataUnsafe } = Telegram.WebApp;
+    const username = useMemo(
+        () =>
+            `${initDataUnsafe.user?.first_name} + ${initDataUnsafe.user?.last_name}`,
+        []
+    );
+
     return (
         <div className="App">
-            work
-            <button onClick={close}>Закрыть</button>
+            <Header onClickButton={close} username={username} />
         </div>
     );
 }
