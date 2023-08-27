@@ -1,14 +1,11 @@
 import { useCallback, useEffect, useMemo } from 'react'
 import './App.css'
 import { Header } from './components/moleculs'
+import { Button } from './components/atoms'
 
 export default function App() {
   useEffect(() => {
     Telegram.WebApp.ready()
-  }, [])
-
-  const close = useCallback(() => {
-    Telegram.WebApp.close()
   }, [])
 
   const { initDataUnsafe } = Telegram.WebApp
@@ -18,9 +15,24 @@ export default function App() {
     [initDataUnsafe.user]
   )
 
+  const close = useCallback(() => {
+    Telegram.WebApp.close()
+  }, [])
+
+  const toggleMainButton = useCallback(() => {
+    if (Telegram.WebApp.MainButton.isVisible) {
+      Telegram.WebApp.MainButton.hide()
+    } else {
+      Telegram.WebApp.MainButton.show()
+    }
+  }, [])
+
   return (
     <div className='App'>
-      <Header onClickButton={close} username={username} />
+      <div className='container'>
+        <Header onClickButton={close} username={username} />
+        <Button onPress={toggleMainButton}>toggle main button</Button>
+      </div>
     </div>
   )
 }

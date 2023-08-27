@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.container {
+  flex: 1
+}
+
 /* bg_color	
   String	Optional. Background color in the #RRGGBB format.
   Also available as the CSS variable var(--tg-theme-bg-color).
