@@ -31,7 +31,7 @@ export default function App() {
     <div className='App'>
       <div className='container'>
         <Header onClickButton={close} username={username} />
-        <Button onPress={toggleMainButton}>toggle main button</Button>
+        <Button onClick={toggleMainButton}>toggle main button</Button>
       </div>
     </div>
   )
